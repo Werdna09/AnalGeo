@@ -1,0 +1,591 @@
+\subsection{Vzdálenost dvou přímek}
+\label{subsec:Distance_between_lines_space}
+
+U dvou přímek v prostoru můžeme kromě jejich vzájemné polohy
+a odchylky zkoumat také jejich vzdálenost.
+
+\begin{definition}
+    \label{def:Distance_between_lines_space}
+
+    \textbf{Vzdáleností dvou přímek} $p$ a $q$ nazýváme nejmenší
+    vzdálenost mezi libovolným bodem přímky $p$ a libovolným bodem
+    přímky $q$.
+
+    Platí tedy
+    \[
+        d(p,q)
+        =
+        \min_{\substack{X\in p\\Y\in q}} |XY|.
+    \]
+\end{definition}
+
+Pokud mají přímky alespoň jeden společný bod, je jejich vzdálenost
+rovna nule. Pro různoběžné přímky tedy platí
+\[
+    d(p,q)=0.
+\]
+
+Stejně tak je vzdálenost nulová u totožných přímek.Nenulovou vzdálenost proto budeme určovat především ve dvou případech:
+u přímek \textbf{rovnoběžných} a u přímek \textbf{mimoběžných}.
+
+
+\subsubsection{Vzdálenost rovnoběžných přímek}
+\label{subsubsec:Distance_parallel_lines_space}
+
+Uvažujme dvě různé rovnoběžné přímky
+\[
+    p:\ X=A+t\vec{u}
+    \quad\text{a}\quad
+    q:\ X=B+s\vec{u},
+\]
+kde $A\in p$, $B\in q$ a $\vec{u}$ je jejich společný směrový vektor.
+
+Protože jsou přímky rovnoběžné, mají všechny body jedné přímky od
+druhé přímky stejnou vzdálenost. Stačí tedy zvolit libovolný bod
+jedné z přímek a určit jeho vzdálenost od druhé přímky.
+
+Například zvolíme bod $B\in q$. Potom
+\[
+    d(p,q)=d(B,p).
+\]
+
+Pro vzdálenost bodu od přímky jsme odvodili vztah
+\[
+    d(B,p)
+    =
+    \frac{
+        |\overrightarrow{AB}\times\vec{u}|
+    }{
+        |\vec{u}|
+    }.
+\]
+
+Proto pro dvě rovnoběžné přímky platí stejný vztah:
+
+\begin{equation}
+    d(p,q)
+    =
+    \frac{
+        |\overrightarrow{AB}\times\vec{u}|
+    }{
+        |\vec{u}|
+    }
+    \label{eq:Distance_parallel_lines_space}
+\end{equation}
+
+kde $A$ je libovolný bod přímky $p$, $B$ libovolný bod přímky $q$
+a $\vec{u}$ směrový vektor obou přímek.
+
+\begin{remark}
+    Při výpočtu můžeme samozřejmě zaměnit přímky $p$ a $q$.
+    Platí
+    \[
+        d(p,q)=d(q,p).
+    \]
+
+    Stejně tak můžeme použít libovolný nenulový násobek směrového
+    vektoru. Výsledná vzdálenost se tím nezmění.
+\end{remark}
+
+\begin{example}
+    \label{exa:Distance_parallel_lines_space}
+
+    Určete vzdálenost přímek $p=\left\{\left[1;-1;2\right] + t(2;1;2) \mid t\in\mathbb{R} \right\}$ 
+    
+    a $q=\left\{\left[2;1;0\right] + s(2;1;2) \mid s\in\mathbb{R} \right\}$.
+
+    Směrové vektory obou přímek jsou
+    \[
+        \vec{u}=(2;1;2).
+    \]
+
+    Přímky mají stejné směrové vektory. Protože například bod
+    \[
+        B[2;1;0]\in q
+    \]
+    neleží na přímce $p$, jsou přímky rovnoběžné.
+
+    Zvolíme body
+    \[
+        A[1;-1;2]\in p
+        \qquad\text{a}\qquad
+        B[2;1;0]\in q.
+    \]
+
+    Potom
+    \[
+        \overrightarrow{AB}
+        =
+        B-A
+        =
+        (1;2;-2).
+    \]
+
+    Vypočítáme vektorový součin:
+    \begin{align*}
+        \overrightarrow{AB}\times\vec{u}
+        &=
+        (1;2;-2)\times(2;1;2)\\
+        &=
+        \left(
+            2\cdot2-(-2)\cdot1;
+            (-2)\cdot2-1\cdot2;
+            1\cdot1-2\cdot2
+        \right)\\
+        &=
+        (6;-6;-3).
+    \end{align*}
+
+    Jeho velikost je
+    \[
+        |\overrightarrow{AB}\times\vec{u}|
+        =
+        \sqrt{6^2+(-6)^2+(-3)^2}
+        =
+        \sqrt{81}
+        =
+        9.
+    \]
+
+    Velikost směrového vektoru je
+    \[
+        |\vec{u}|
+        =
+        \sqrt{2^2+1^2+2^2}
+        =
+        3.
+    \]
+
+    Vzdálenost přímek je tedy
+    \[
+        d(p,q)
+        =
+        \frac{9}{3}
+        =
+        3.
+    \]
+\end{example}
+
+\begin{example}
+    \label{exa:Find_parallel_lines_given_distance_space}
+
+    Je dána přímka
+    \[
+        \begin{aligned}
+            p: x&=1+t,\\
+            y&=-1+t,\\
+            z&=2; t\in\mathbb{R}.
+        \end{aligned}
+    \]
+
+    Určete všechny přímky $q$, které jsou rovnoběžné s přímkou $p$,
+    protínají osu $z$ a jejich vzdálenost od přímky $p$ je rovna $3$.
+
+    Směrový vektor přímky $p$ je
+    \[
+        \vec{u}=(1;1;0).
+    \]
+
+    Protože má být přímka $q$ rovnoběžná s přímkou $p$, můžeme pro ni
+    použít stejný směrový vektor.
+
+    Přímka $q$ má zároveň protínat osu $z$. Její průsečík s osou $z$
+    proto můžeme označit
+    \[
+        B[0;0;m],
+    \]
+    kde $m\in\mathbb{R}$.
+
+    Přímka $q$ má tedy parametrické vyjádření
+    \[
+        \begin{aligned}
+            q: x&=s,\\
+            y&=s,\\
+            z&=m; s\in\mathbb{R}.
+        \end{aligned}
+    \]
+
+    Z přímky $p$ zvolíme například bod
+    \[
+        A[1;-1;2].
+    \]
+
+    Potom
+    \[
+        \overrightarrow{AB}
+        =
+        B-A
+        =
+        (-1;1;m-2).
+    \]
+
+    Vzdálenost rovnoběžných přímek určíme ze vztahu
+    \[
+        d(p,q)
+        =
+        \frac{
+            |\overrightarrow{AB}\times\vec{u}|
+        }{
+            |\vec{u}|
+        }.
+    \]
+
+    Nejprve vypočítáme vektorový součin:
+    \begin{align*}
+        \overrightarrow{AB}\times\vec{u}
+        &=
+        (-1;1;m-2)\times(1;1;0)\\
+        &=
+        (2-m;m-2;-2).
+    \end{align*}
+
+    Jeho velikost je
+    \begin{align*}
+        |\overrightarrow{AB}\times\vec{u}|
+        &=
+        \sqrt{(2-m)^2+(m-2)^2+(-2)^2}\\
+        &=
+        \sqrt{2(m-2)^2+4}.
+    \end{align*}
+
+    Dále
+    \[
+        |\vec{u}|=\sqrt{1^2+1^2}=\sqrt2.
+    \]
+
+    Proto
+    \[
+        d(p,q)
+        =
+        \frac{\sqrt{2(m-2)^2+4}}{\sqrt2}
+        =
+        \sqrt{(m-2)^2+2}.
+    \]
+
+    Požadujeme, aby
+    \[
+        d(p,q)=3.
+    \]
+
+    Dostáváme tedy
+    \begin{align*}
+        \sqrt{(m-2)^2+2}&=3,\\
+        (m-2)^2+2&=9,\\
+        (m-2)^2&=7,\\
+        m-2&=\pm\sqrt7,
+    \end{align*}
+    a tedy
+    \[
+        m=2\pm\sqrt7.
+    \]
+
+    Existují proto dvě hledané přímky:
+    \[
+        \begin{aligned}
+            q_1: x&=s,\\
+                 y&=s,\\
+                 z&=2+\sqrt7; s\in\mathbb{R},
+        \end{aligned}
+        \qquad
+        \begin{aligned}
+            q_2: x&=s,\\
+                 y&=s,\\
+                 z&=2-\sqrt7; s\in\mathbb{R}.
+        \end{aligned}
+    \]
+
+    Obě přímky jsou rovnoběžné s přímkou $p$, protínají osu $z$
+    a platí
+    \[
+        d(p,q_1)=d(p,q_2)=3.
+    \]
+\end{example}
+
+
+
+% ============================================================
+%       M I M O B Ě Ž K Y - V Z D Á L E N O S T
+% ============================================================
+
+
+
+\subsubsection{Vzdálenost mimoběžných přímek}
+\label{subsubsec:Distance_skew_lines_space}
+
+U rovnoběžných přímek jsme mohli vzdálenost určit jako vzdálenost
+libovolného bodu jedné přímky od druhé přímky. U mimoběžek takový
+postup použít nemůžeme, protože vzdálenost bodů jedné mimoběžky od
+druhé přímky se mění.
+
+Uvažujme mimoběžné přímky
+\[
+    p:\ X=A+t\vec{u}
+\]
+a
+\[
+    q:\ X=B+s\vec{v}.
+\]
+
+Protože nejsou jejich směrové vektory rovnoběžné, platí
+\[
+    \vec{u}\times\vec{v}\neq\vec{0}.
+\]
+
+Vektor
+\[
+    \vec{u}\times\vec{v}
+\]
+je kolmý současně k oběma směrovým vektorům, a tedy ke směrům obou
+přímek.
+
+Mezi dvěma mimoběžnými přímkami existuje úsečka, která je kolmá
+k oběma přímkám. Její délka je nejmenší možnou vzdáleností mezi body
+obou přímek.
+
+\begin{definition}
+    \label{def:Common_perpendicular_skew_lines}
+
+    Úsečku, jejíž krajní body leží na dvou mimoběžných přímkách
+    a která je kolmá k oběma těmto přímkám, nazýváme
+    \textbf{společnou kolmicí mimoběžných přímek}.
+
+    Její délka je vzdáleností těchto přímek.
+\end{definition}
+
+Pro odvození vztahu zvolíme body
+\[
+    A\in p,
+    \qquad
+    B\in q.
+\]
+
+Vektory
+\[
+    \vec{u},\qquad
+    \vec{v},\qquad
+    \overrightarrow{AB}
+\]
+určují rovnoběžnostěn.
+
+Jeho objem můžeme pomocí smíšeného součinu vyjádřit jako
+\[
+    V
+    =
+    \left|
+        \overrightarrow{AB}
+        \cdot
+        (\vec{u}\times\vec{v})
+    \right|.
+\]
+
+Obsah podstavy tohoto rovnoběžnostěnu, kterou určují vektory
+$\vec{u}$ a $\vec{v}$, je
+\[
+    S
+    =
+    |\vec{u}\times\vec{v}|.
+\]
+
+Výška rovnoběžnostěnu je právě vzdálenost mimoběžných přímek
+$d(p,q)$. Proto zároveň platí
+\[
+    V
+    =
+    |\vec{u}\times\vec{v}|\cdot d(p,q).
+\]
+
+Porovnáním obou vyjádření objemu dostáváme
+\[
+    |\vec{u}\times\vec{v}|\cdot d(p,q)
+    =
+    \left|
+        \overrightarrow{AB}
+        \cdot
+        (\vec{u}\times\vec{v})
+    \right|.
+\]
+
+Odtud
+
+\begin{equation}
+        d(p,q)
+        =
+        \frac{
+            \left|
+                \overrightarrow{AB}
+                \cdot
+                (\vec{u}\times\vec{v})
+            \right|
+        }{
+            |\vec{u}\times\vec{v}|
+        }
+    \label{eq:Distance_skew_lines_space}
+\end{equation}
+
+kde
+\[
+    A\in p,
+    \qquad
+    B\in q
+\]
+jsou libovolné body daných mimoběžek a $\vec{u}$, $\vec{v}$ jsou
+jejich směrové vektory.
+
+\begin{remark}
+    Vztah
+    \[
+        d(p,q)
+        =
+        \frac{
+            \left|
+                \overrightarrow{AB}
+                \cdot
+                (\vec{u}\times\vec{v})
+            \right|
+        }{
+            |\vec{u}\times\vec{v}|
+        }
+    \]
+    můžeme použít pouze tehdy, nejsou-li směrové vektory přímek
+    rovnoběžné.
+
+    U rovnoběžných přímek totiž platí
+    \[
+        \vec{u}\times\vec{v}
+        =
+        \vec{0},
+    \]
+    takže by byl jmenovatel roven nule. Vzdálenost rovnoběžných
+    přímek proto určujeme předchozím způsobem.
+\end{remark}
+
+\begin{example}
+    \label{exa:Distance_skew_lines_space}
+
+    Určete vzdálenost přímek
+    \[
+        \begin{aligned}
+            p: x&=1+t,\\
+            y&=t,\\
+            z&=0; t\in\mathbb{R}
+        \end{aligned}
+    \]
+    a
+    \[
+        \begin{aligned}
+            q: x&=2+s,\\
+            y&=-1,\\
+            z&=-1+s; s\in\mathbb{R}.
+        \end{aligned}
+    \]
+
+    Směrové vektory přímek jsou
+    \[
+        \vec{u}=(1;1;0),
+        \qquad
+        \vec{v}=(1;0;1).
+    \]
+
+    Vektory nejsou rovnoběžné. Přímky navíc nemají společný bod,
+    a jsou tedy mimoběžné.
+
+    Zvolíme body
+    \[
+        A[1;0;0]\in p
+        \qquad\text{a}\qquad
+        B[2;-1;-1]\in q.
+    \]
+
+    Potom
+    \[
+        \overrightarrow{AB}
+        =
+        (1;-1;-1).
+    \]
+
+    Nejprve vypočítáme vektorový součin směrových vektorů:
+    \begin{align*}
+        \vec{u}\times\vec{v}
+        &=
+        (1;1;0)\times(1;0;1)\\
+        &=
+        (1;-1;-1).
+    \end{align*}
+
+    Jeho velikost je
+    \[
+        |\vec{u}\times\vec{v}|
+        =
+        \sqrt{1^2+(-1)^2+(-1)^2}
+        =
+        \sqrt3.
+    \]
+
+    Nyní vypočítáme smíšený součin:
+    \begin{align*}
+        \overrightarrow{AB}
+        \cdot
+        (\vec{u}\times\vec{v})
+        &=
+        (1;-1;-1)\cdot(1;-1;-1)\\
+        &=
+        1+1+1\\
+        &=
+        3.
+    \end{align*}
+
+    Dosadíme do vztahu pro vzdálenost mimoběžných přímek:
+    \[
+        d(p,q)
+        =
+        \frac{|3|}{\sqrt3}
+        =
+        \frac{3}{\sqrt3}
+        =
+        \sqrt3.
+    \]
+\end{example}
+
+\begin{remark}
+    V předchozím příkladu nastala zvlášť jednoduchá situace:
+    \[
+        \overrightarrow{AB}
+        =
+        \vec{u}\times\vec{v}.
+    \]
+
+    Vektor $\overrightarrow{AB}$ je tedy kolmý k oběma směrovým
+    vektorům. Úsečka $AB$ je proto přímo společnou kolmicí mimoběžek
+    $p$ a $q$ a její délka
+    \[
+        |AB|=\sqrt3
+    \]
+    je jejich vzdáleností.
+\end{remark}
+
+Vzdálenost dvou přímek v prostoru tedy závisí na jejich vzájemné
+poloze:
+
+\[
+    \begin{array}{c|c}
+        \text{vzájemná poloha přímek} & \text{vzdálenost}\\
+        \hline
+        \text{totožné} & 0\\
+        \text{různoběžné} & 0\\
+        \text{rovnoběžné}
+        &
+        \displaystyle
+        \frac{|\overrightarrow{AB}\times\vec{u}|}{|\vec{u}|}\\[3mm]
+        \text{mimoběžné}
+        &
+        \displaystyle
+        \frac{
+            \left|
+                \overrightarrow{AB}\cdot
+                (\vec{u}\times\vec{v})
+            \right|
+        }{
+            |\vec{u}\times\vec{v}|
+        }
+    \end{array}
+\]
