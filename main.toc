@@ -129,33 +129,33 @@
 \contentsline {subsection}{\numberline {6.7}Vyjádření přímky pomocí dvou rovnic}{193}{subsection.6.7}%
 \contentsline {subsection}{\numberline {6.8}Roviny v prostoru}{194}{subsection.6.8}%
 \contentsline {subsection}{\numberline {6.9}Parametrické vyjádření roviny}{195}{subsection.6.9}%
-\contentsline {subsubsection}{\numberline {6.9.1}Rovina určená bodem a dvěma směrovými vektory}{196}{subsubsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.2}Význam parametrů}{197}{subsubsection.6.9.2}%
-\contentsline {subsubsection}{\numberline {6.9.3}Proč musí být směrové vektory nerovnoběžné}{198}{subsubsection.6.9.3}%
-\contentsline {subsubsection}{\numberline {6.9.4}Sestavení parametrického vyjádření roviny}{198}{subsubsection.6.9.4}%
-\contentsline {subsubsection}{\numberline {6.9.5}Čtení parametrického vyjádření roviny}{199}{subsubsection.6.9.5}%
-\contentsline {subsubsection}{\numberline {6.9.6}Příslušnost bodu k rovině}{200}{subsubsection.6.9.6}%
-\contentsline {subsubsection}{\numberline {6.9.7}Rovina určená třemi body}{202}{subsubsection.6.9.7}%
-\contentsline {subsubsection}{\numberline {6.9.8}Rovina určená přímkou a bodem}{203}{subsubsection.6.9.8}%
-\contentsline {subsubsection}{\numberline {6.9.9}Rovina určená dvěma přímkami}{204}{subsubsection.6.9.9}%
-\contentsline {paragraph}{Dvě různoběžné přímky.}{204}{section*.107}%
-\contentsline {paragraph}{Dvě různé rovnoběžné přímky.}{204}{section*.108}%
-\contentsline {paragraph}{Dvě mimoběžné přímky.}{204}{section*.109}%
-\contentsline {subsubsection}{\numberline {6.9.10}Nejednoznačnost parametrického vyjádření roviny}{204}{subsubsection.6.9.10}%
-\contentsline {subsection}{\numberline {6.10}Obecná rovnice roviny}{205}{subsection.6.10}%
-\contentsline {subsubsection}{\numberline {6.10.1}Normálový vektor roviny}{206}{subsubsection.6.10.1}%
-\contentsline {subsubsection}{\numberline {6.10.2}Odvození obecné rovnice roviny}{207}{subsubsection.6.10.2}%
-\contentsline {subsubsection}{\numberline {6.10.3}Rovina určená bodem a normálovým vektorem}{208}{subsubsection.6.10.3}%
-\contentsline {subsubsection}{\numberline {6.10.4}Čtení informací z obecné rovnice}{209}{subsubsection.6.10.4}%
-\contentsline {subsubsection}{\numberline {6.10.5}Příslušnost bodu k rovině}{210}{subsubsection.6.10.5}%
-\contentsline {subsubsection}{\numberline {6.10.6}Nejednoznačnost obecné rovnice roviny}{211}{subsubsection.6.10.6}%
-\contentsline {subsubsection}{\numberline {6.10.7}Rovina procházející počátkem soustavy souřadnic}{211}{subsubsection.6.10.7}%
-\contentsline {subsubsection}{\numberline {6.10.8}Význam nulových koeficientů}{212}{subsubsection.6.10.8}%
-\contentsline {subsubsection}{\numberline {6.10.9}Rovina rovnoběžná s danou rovinou}{213}{subsubsection.6.10.9}%
-\contentsline {subsubsection}{\numberline {6.10.10}Rovina určená třemi body}{213}{subsubsection.6.10.10}%
-\contentsline {subsubsection}{\numberline {6.10.11}Převod parametrického vyjádření na obecnou rovnici}{214}{subsubsection.6.10.11}%
-\contentsline {subsubsection}{\numberline {6.10.12}Převod obecné rovnice na parametrické vyjádření}{215}{subsubsection.6.10.12}%
-\contentsline {subsubsection}{\numberline {6.10.13}Rovina kolmá k přímce}{216}{subsubsection.6.10.13}%
-\contentsline {subsubsection}{\numberline {6.10.14}Průsečíky roviny se souřadnicovými osami}{217}{subsubsection.6.10.14}%
-\contentsline {subsubsection}{\numberline {6.10.15}Úsekový tvar rovnice roviny}{218}{subsubsection.6.10.15}%
-\contentsline {subsubsection}{\numberline {6.10.16}Shrnutí}{219}{subsubsection.6.10.16}%
+\contentsline {subsubsection}{\numberline {6.9.1}Rovina určená bodem a dvěma směrovými vektory}{195}{subsubsection.6.9.1}%
+\contentsline {subsubsection}{\numberline {6.9.2}Význam parametrů}{196}{subsubsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.3}Proč musí být směrové vektory nerovnoběžné}{197}{subsubsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.4}Sestavení parametrického vyjádření roviny}{197}{subsubsection.6.9.4}%
+\contentsline {subsubsection}{\numberline {6.9.5}Čtení parametrického vyjádření roviny}{198}{subsubsection.6.9.5}%
+\contentsline {subsubsection}{\numberline {6.9.6}Příslušnost bodu k rovině}{199}{subsubsection.6.9.6}%
+\contentsline {subsubsection}{\numberline {6.9.7}Rovina určená třemi body}{200}{subsubsection.6.9.7}%
+\contentsline {subsubsection}{\numberline {6.9.8}Rovina určená přímkou a bodem}{201}{subsubsection.6.9.8}%
+\contentsline {subsubsection}{\numberline {6.9.9}Rovina určená dvěma přímkami}{202}{subsubsection.6.9.9}%
+\contentsline {paragraph}{Dvě různoběžné přímky.}{202}{section*.105}%
+\contentsline {paragraph}{Dvě různé rovnoběžné přímky.}{203}{section*.106}%
+\contentsline {paragraph}{Dvě mimoběžné přímky.}{203}{section*.107}%
+\contentsline {subsubsection}{\numberline {6.9.10}Nejednoznačnost parametrického vyjádření roviny}{203}{subsubsection.6.9.10}%
+\contentsline {subsection}{\numberline {6.10}Obecná rovnice roviny}{204}{subsection.6.10}%
+\contentsline {subsubsection}{\numberline {6.10.1}Normálový vektor roviny}{205}{subsubsection.6.10.1}%
+\contentsline {subsubsection}{\numberline {6.10.2}Odvození obecné rovnice roviny}{206}{subsubsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.3}Rovina určená bodem a normálovým vektorem}{207}{subsubsection.6.10.3}%
+\contentsline {subsubsection}{\numberline {6.10.4}Čtení informací z obecné rovnice}{208}{subsubsection.6.10.4}%
+\contentsline {subsubsection}{\numberline {6.10.5}Příslušnost bodu k rovině}{209}{subsubsection.6.10.5}%
+\contentsline {subsubsection}{\numberline {6.10.6}Nejednoznačnost obecné rovnice roviny}{210}{subsubsection.6.10.6}%
+\contentsline {subsubsection}{\numberline {6.10.7}Rovina procházející počátkem soustavy souřadnic}{210}{subsubsection.6.10.7}%
+\contentsline {subsubsection}{\numberline {6.10.8}Význam nulových koeficientů}{211}{subsubsection.6.10.8}%
+\contentsline {subsubsection}{\numberline {6.10.9}Rovina rovnoběžná s danou rovinou}{212}{subsubsection.6.10.9}%
+\contentsline {subsubsection}{\numberline {6.10.10}Rovina určená třemi body}{212}{subsubsection.6.10.10}%
+\contentsline {subsubsection}{\numberline {6.10.11}Převod parametrického vyjádření na obecnou rovnici}{213}{subsubsection.6.10.11}%
+\contentsline {subsubsection}{\numberline {6.10.12}Převod obecné rovnice na parametrické vyjádření}{214}{subsubsection.6.10.12}%
+\contentsline {subsubsection}{\numberline {6.10.13}Rovina kolmá k přímce}{215}{subsubsection.6.10.13}%
+\contentsline {subsubsection}{\numberline {6.10.14}Průsečíky roviny se souřadnicovými osami}{216}{subsubsection.6.10.14}%
+\contentsline {subsubsection}{\numberline {6.10.15}Úsekový tvar rovnice roviny}{217}{subsubsection.6.10.15}%
+\contentsline {subsubsection}{\numberline {6.10.16}Shrnutí}{218}{subsubsection.6.10.16}%
